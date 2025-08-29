@@ -5,6 +5,7 @@ Supports JSON / Object formats and correctly encodes, decodes them.
 \
 ### List of functions:
 
+- function load_db(sqlpath)
 - async function sql_get(keyname,keyvalue,tablename,contents="*",param="")
 - async function sql_get_all(tablename,contents="*",param="")
 - async function sql_update(keyname,keyvalue,tablename,contents)
