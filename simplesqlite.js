@@ -105,3 +105,7 @@ async function sql_delete(keyname,keyvalue,tablename) {
         );
     });
 }
+
+module.exports = {//db
+            sql_get_all,sql_remove_balance,sql_get,
+            sql_update,sql_insert,sql_get_db,sql_update_db,sql_delete}
