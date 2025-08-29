@@ -2,6 +2,20 @@
 // which is your sqlite database.
 
 const sqlite3 = require('sqlite3');
+let db;
+function loaddb(sqlpath){
+    db = new sqlite3.Database('databases/users.sqlite', sqlite3.OPEN_READWRITE, (err) => {
+        if (err) {
+            console.error('Error opening database:', err);
+        } else {
+            db.run('PRAGMA journal_mode=WAL;', (err) => {
+                if (err) {
+                    console.error('Error setting WAL mode:', err);
+                }
+            });
+        }
+    });
+}
 
 function BigIntToStr(inp){
     return inp.toLocaleString("fullwide", { useGrouping: false });
@@ -106,6 +120,6 @@ async function sql_delete(keyname,keyvalue,tablename) {
     });
 }
 
-module.exports = {//db
+module.exports = {load_db,db
             sql_get_all,sql_remove_balance,sql_get,
             sql_update,sql_insert,sql_get_db,sql_update_db,sql_delete}
