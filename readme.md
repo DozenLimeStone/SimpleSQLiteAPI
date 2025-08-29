@@ -1,6 +1,6 @@
-A game changer if you want to use sqlite.\
+### A game changer if you want to use sqlite.\
 \
-Supports JSON / Object formats and correctly encodes, decodes them.
+Supports JSON / Object and BigInt formats and correctly encodes, decodes them.
 \
 \
 ### List of functions:
@@ -12,4 +12,4 @@ Supports JSON / Object formats and correctly encodes, decodes them.
 - async function sql_insert(tablename,contents)
 - async function sql_delete(keyname,keyvalue,tablename)
 
-Note: You need to define db variable at the top of the file as is shown in **example.js**
+### Note: You need to call load_db() at the top of the file as is shown in **example.js**
