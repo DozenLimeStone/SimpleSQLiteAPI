@@ -114,7 +114,7 @@ async function sql_delete(keyname,keyvalue,tablename) {
             [keyvalue],
             (err) => {
                 if (err)reject(err)
-                else resolve(null)
+                else resolve(true)
             }
         );
     });
