@@ -2,7 +2,6 @@
 \
 Supports JSON / Object and BigInt formats and correctly encodes, decodes them.
 \
-\
 ### List of functions:
 
 - function load_db(sqlpath)
