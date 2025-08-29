@@ -1,5 +1,4 @@
 ### A game changer if you want to use sqlite.
-\
 Supports JSON / Object and BigInt formats and correctly encodes, decodes them.
 
 ### List of functions:
