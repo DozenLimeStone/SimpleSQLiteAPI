@@ -12,4 +12,4 @@ Supports JSON / Object formats and correctly encodes, decodes them.
 - async function sql_insert(tablename,contents)
 - async function sql_delete(keyname,keyvalue,tablename)
 
-Note: You need to define db variable at the top of the file as is shown in example.js
+Note: You need to define db variable at the top of the file as is shown in **example.js**
